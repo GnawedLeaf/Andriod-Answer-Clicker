@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question3Activity"
+    >
+
+
+    <ImageView
+        android:id="@+id/qn3Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/appqnlabel3" />
+    <ImageButton
+        android:id="@+id/btnA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btna"
+        android:layout_alignParentTop="true"
+        android:onClick="btnAHandler"
+        android:layout_marginTop="150dp">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/btnB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnA"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btnb"
+        android:onClick="btnBHandler"
+        android:layout_marginTop="10dp"
+        >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/btnC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnB"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btnc"
+        android:onClick="btnCHandler"
+        android:layout_marginTop="10dp"
+        >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/btnD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnC"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btnd"
+        android:onClick="btnDHandler"
+        android:layout_marginTop="10dp"
+        >
+    </ImageButton>
+
+    <ImageView
+        android:id="@+id/warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/warning"
+        android:layout_below="@id/btnD"
+        android:layout_marginTop="50px"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/warning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px"
+        android:src="@drawable/appnextbuttondown"
+        android:background="@color/white"
+        android:onClick="btnNextHandler"/>
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="15dp"
+        android:layout_height="6dp"
+        android:layout_below="@id/btnA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/btnTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Timer"
+        android:onClick="btnTimerHandler"/>
+    <TextView
+        android:id="@+id/txtTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ding dong"
+        android:layout_below="@id/btnTimer"/>
+
+
+</RelativeLayout>
